@@ -5,6 +5,7 @@ type_of_generation = str(input("fixed or variable : "))
 input_error = "Next time enter a usable value if you want the code to run correctly."
 contains_digit = False
 num_times = "5" 
+max_characters = "129"
 testisdigit = "1234"
 num_times_user = "3456"
 list_of_lists = [ 'g', 'p', 'q', 'r', 's', 'I', 'J', 'K', 'L', 'T', 'U', 'V', 'W', 't', 'u', 'v', 'h', 'i', 'j', 'a', 'b', 'c', 'd', 'e', 'f', 'k', 'l', 'm', 'n', 'o', 'w', 'x', 'y', 'z', '/', ':', ';', 
@@ -22,6 +23,8 @@ if num_times.isdigit() :
 if contains_digit == False :
    print(input_error)
 num_timesint = int(num_times)
+if num_times >= max_characters :
+ print("128 characters maximumn!")
 
 def printing():
    print(" ")
